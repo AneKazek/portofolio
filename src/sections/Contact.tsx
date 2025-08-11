@@ -15,7 +15,7 @@ export default function Contact() {
     const message = String(form.get("message") || "");
     const subject = encodeURIComponent(`Portfolio Inquiry — ${name}`);
     const body = encodeURIComponent(`From: ${name} <${email}>\n\n${message}`);
-    window.location.href = `mailto:mdzaky@example.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:kazekiye@wearehackerone.com?subject=${subject}&body=${body}`;
   }
 
   return (
@@ -28,7 +28,7 @@ export default function Contact() {
         <div className="flex items-center gap-3 pt-2">
           <Button type="submit">Contact Me</Button>
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/zakiyhdr"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
@@ -37,7 +37,7 @@ export default function Contact() {
             <Linkedin className="size-5" />
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/AneKazek"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
