@@ -34,11 +34,6 @@ export default function Hero() {
 
   return (
     <header ref={root} className="relative overflow-hidden">
-      <div className="absolute inset-0 -z-10">
-        <Suspense fallback={null}>
-          <Spline scene="https://my.spline.design/animatedbackgroundgradientforweb-2O8GlUM1tBoFFzLbnWPWlrvx/" />
-        </Suspense>
-      </div>
       <div className="container py-20 md:py-28">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6">
@@ -58,7 +53,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="hero-card rounded-xl border border-border/60 bg-card/30 backdrop-blur-md will-change-transform">
-            {/* <HeroModel /> */}
+            <HeroModel />
           </div>
         </div>
       </div>
