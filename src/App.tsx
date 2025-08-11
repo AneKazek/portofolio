@@ -8,10 +8,12 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { useEffect, useState } from "react";
 import Preloader from "@/components/Preloader";
+import { useLenis } from "@/hooks/use-lenis";
 
 const queryClient = new QueryClient();
 
 const App = () => {
+  useLenis();
   const [showPreloader, setShowPreloader] = useState(false);
 
   useEffect(() => {
