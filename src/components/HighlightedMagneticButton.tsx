@@ -6,7 +6,7 @@ interface MagneticButtonProps {
   href?: string;
 }
 
-export default function MagneticButton({ children, href }: MagneticButtonProps) {
+export default function HighlightedMagneticButton({ children, href }: MagneticButtonProps) {
   const ref = useRef<HTMLDivElement>(null);
 
   const onMove = (e: React.MouseEvent<HTMLElement>) => {
@@ -27,7 +27,7 @@ export default function MagneticButton({ children, href }: MagneticButtonProps) 
   const content = (
     <Button
       size="lg"
-      className="rounded-lg bg-transparent text-foreground hover:bg-accent hover:text-accent-foreground transition-all"
+      className="rounded-lg bg-accent text-accent-foreground hover:brightness-110 transition-all"
     >
       {children}
     </Button>

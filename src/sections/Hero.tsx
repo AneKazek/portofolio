@@ -1,6 +1,7 @@
 import Spline from "@splinetool/react-spline";
 import React, { Suspense, useEffect, useRef } from "react";
 import HeroModel from "@/components/three/HeroModel";
+import HighlightedMagneticButton from "@/components/HighlightedMagneticButton";
 import MagneticButton from "@/components/MagneticButton";
 import gsap from "gsap";
 
@@ -55,7 +56,7 @@ export default function Hero() {
               I craft intelligent systems and secure infrastructures that scale. Performance-focused, security-first, built to ship.
             </p>
             <div className="hero-cta flex items-center gap-4">
-              <MagneticButton href="#contact">Contact Me</MagneticButton>
+              <HighlightedMagneticButton href="#contact">Contact Me</HighlightedMagneticButton>
               <a href="#projects" className="story-link text-sm">View My Projects</a>
             </div>
           </div>
