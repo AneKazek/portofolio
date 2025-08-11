@@ -34,6 +34,13 @@ export default function Hero() {
 
   return (
     <header ref={root} className="relative overflow-hidden">
+      <iframe
+        src="https://my.spline.design/animatedbackgroundgradientforweb-2O8GlUM1tBoFFzLbnWPWlrvx/"
+        frameBorder="0"
+        width="100%"
+        height="100%"
+        className="absolute inset-0 -z-10"
+      ></iframe>
       <div className="container py-20 md:py-28">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6">
