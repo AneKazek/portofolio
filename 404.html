@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Function to get the base path from the canonical link in index.html
+      function getBasePath() {
+        const link = document.querySelector('link[rel="canonical"]');
+        if (link && link.href) {
+          const url = new URL(link.href);
+          return url.pathname;
+        }
+        return '/'; // Default to root if canonical link not found
+      }
+
+      var pathSegmentsToKeep = 0; // For project pages, usually 0 or 1 depending on your base path
+      var basePath = getBasePath();
+
+      var l = window.location;
+      // Construct the new URL to redirect to the base path, preserving the original path as a query parameter
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        basePath + '?' + l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
