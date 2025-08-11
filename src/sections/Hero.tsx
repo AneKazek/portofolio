@@ -1,7 +1,7 @@
 import NeuronScene from "@/components/visuals/NeuronScene";
 import HeroModel from "@/components/three/HeroModel";
 import MagneticButton from "@/components/MagneticButton";
-
+import { Helmet } from "react-helmet-async";
 
 export default function Hero() {
   return (
