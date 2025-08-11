@@ -15,11 +15,11 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "fixed top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-300",
+        "fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-300",
         isScrolled ? "opacity-100" : "opacity-0 -translate-y-4 pointer-events-none"
       )}
     >
-      <nav className="flex items-center gap-1 rounded-lg border bg-card/40 p-1 backdrop-blur-md">
+      <nav className="flex items-center gap-1 rounded-lg border border-white/10 bg-background/30 p-1 backdrop-blur-lg">
         {navLinks.map((link) => (
           <MagneticButton key={link.href} href={link.href}>
             {link.label}

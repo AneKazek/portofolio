@@ -27,7 +27,7 @@ export default function MagneticButton({ children, href }: MagneticButtonProps) 
   const content = (
     <Button
       size="lg"
-      className="rounded-lg bg-teal text-foreground shadow-glow-teal hover:opacity-95 transition-all"
+      className="rounded-lg bg-transparent text-foreground hover:bg-accent hover:text-accent-foreground transition-all"
     >
       {children}
     </Button>
