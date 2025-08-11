@@ -1,7 +1,6 @@
 import NeuronScene from "@/components/visuals/NeuronScene";
 import HeroModel from "@/components/three/HeroModel";
 import MagneticButton from "@/components/MagneticButton";
-import { Helmet } from "react-helmet-async";
 
 export default function Hero() {
   return (
@@ -21,8 +20,8 @@ export default function Hero() {
               I craft intelligent systems and secure infrastructures that scale. Performance-focused, security-first, built to ship.
             </p>
             <div className="flex items-center gap-4">
-              <MagneticButton href="#contact">Let’s talk</MagneticButton>
-              <a href="#projects" className="story-link text-sm">View projects</a>
+              <MagneticButton href="#contact">Contact Me</MagneticButton>
+              <a href="#projects" className="story-link text-sm">View My Projects</a>
             </div>
           </div>
           <div className="rounded-xl border border-border/60 bg-card/30 backdrop-blur-md">
