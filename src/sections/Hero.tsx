@@ -36,7 +36,7 @@ export default function Hero() {
   return (
     <header ref={root} className="relative overflow-hidden">
       <iframe
-        src="https://my.spline.design/animatedbackgroundgradientforweb-2O8GlUM1tBoFFzLbnWPWlrvx/"
+        src="https://my.spline.design/glowingplanetparticles-IH0Nx7xoXDsq9KIZJsZaLNQl/"
         frameBorder="0"
         width="100%"
         height="100%"

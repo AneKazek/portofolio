@@ -10,7 +10,7 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "VITE_APP_BASE_PATH=/portofolio/ npm run build",
     "deploy": "gh-pages -d dist"
 
   },
