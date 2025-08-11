@@ -1,25 +1,11 @@
 import NeuronScene from "@/components/visuals/NeuronScene";
 import HeroModel from "@/components/three/HeroModel";
 import MagneticButton from "@/components/MagneticButton";
-import { Helmet } from "react-helmet-async";
+
 
 export default function Hero() {
   return (
     <header className="relative overflow-hidden bg-hero">
-      <Helmet>
-        <title>Muhammad Dzaky Haidar — AI Engineer, Cybersecurity, Tech Leader</title>
-        <meta name="description" content="Cinematic, story-driven portfolio built for tech recruiters and founders." />
-        <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : '/'} />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Person',
-            name: 'Muhammad Dzaky Haidar',
-            jobTitle: ['AI Engineer', 'Cybersecurity Analyst', 'Tech Leader'],
-            url: typeof window !== 'undefined' ? window.location.href : 'https://example.com',
-          })}
-        </script>
-      </Helmet>
       <NeuronScene />
       <div className="container py-20 md:py-28">
         <div className="grid md:grid-cols-2 gap-10 items-center">
