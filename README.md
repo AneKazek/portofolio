@@ -1,69 +1,36 @@
-# Dzaky's Portofolio
-
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Spline](https://img.shields.io/badge/Spline-FFC0CB?style=for-the-badge&logo=spline&logoColor=black)](https://spline.design/)
-
-## About The Project
-
-Welcome to Dzaky's Cosmic Canvas, a personal portfolio website showcasing the expertise of Muhammad Dzaky Haidar as an AI Engineer, Cybersecurity Analyst, and Tech Leader. This project is designed to highlight intelligent systems and secure infrastructures, built with a focus on performance and security.
-
-### Built With
-
-This project is built using a modern web development stack:
-
-*   [Vite](https://vitejs.dev/)
-*   [React.js](https://react.dev/)
-*   [TypeScript](https://www.typescriptlang.org/)
-*   [Tailwind CSS](https://tailwindcss.com/)
-*   [shadcn/ui](https://ui.shadcn.com/)
-*   [Spline](https://spline.design/) for interactive 3D backgrounds
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-To get a local copy up and running, follow these simple steps.
+First, run the development server:
 
-### Prerequisites
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Make sure you have Node.js and npm installed. You can use `nvm` for easy installation and management:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-*   npm
-    ```sh
-    npm install npm@latest -g
-    ```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Installation
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-1.  Clone the repo
-    ```sh
-    git clone <YOUR_GIT_URL>
-    ```
-2.  Navigate to the project directory
-    ```sh
-    cd <YOUR_PROJECT_NAME>
-    ```
-3.  Install NPM packages
-    ```sh
-    npm install
-    ```
-4.  Run the development server
-    ```sh
-    npm run dev
-    ```
+## Learn More
 
-## Usage
+To learn more about Next.js, take a look at the following resources:
 
-This portfolio is designed to be a dynamic showcase of projects, skills, and leadership experience. Explore the different sections to learn more about Dzaky's work in AI, cybersecurity, and technology leadership.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## License
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-Distributed under the MIT License. See `LICENSE` for more information.
+## Deploy on Vercel
 
-## Contact
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Muhammad Dzaky Haidar - [Your Email Here]
-
-Project Link: [Your Project URL Here]
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

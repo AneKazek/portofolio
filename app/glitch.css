@@ -1,0 +1,56 @@
+
+@keyframes glitch-in {
+  0% { opacity: 0; transform: translateX(1.6em) skewX(-24deg); filter: blur(6px); }
+  60% { opacity: 1; transform: translateX(-0.08em) skewX(6deg); filter: blur(1px); }
+  100% { opacity: 1; transform: none; filter: none; }
+}
+
+.glitch-char {
+  display: inline-block;
+  white-space: pre;
+  animation: glitch-in 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+html {
+  scroll-behavior: initial;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+@keyframes react-pop {
+  0% { opacity: 0; transform: translate(-50%, -50%) scale(0.2); }
+  20% { opacity: 1; transform: translate(-50%, -80%) scale(1.4); }
+  100% { opacity: 0; transform: translate(-50%, -260%) scale(1); }
+}
+
+.react-pop {
+  animation: react-pop 1.6s ease-out forwards;
+}
+
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(60px, 40px); }
+}
+
+@keyframes twinkle {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(0.6); }
+}
