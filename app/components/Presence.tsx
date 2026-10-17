@@ -312,8 +312,18 @@ function Zone({ sid }: { sid: string }) {
 }
 
 export default function Presence() {
+  const hasConvex = Boolean(process.env.NEXT_PUBLIC_CONVEX_URL);
   // crypto.randomUUID must run after mount, not during prerender
   const [sid, setSid] = useState('');
-  useEffect(() => setSid(crypto.randomUUID()), []);
+  useEffect(() => {
+    if (hasConvex) {
+      setSid(crypto.randomUUID());
+    }
+  }, [hasConvex]);
+
+  if (!hasConvex) {
+    return null;
+  }
+
   return sid ? <Zone sid={sid} /> : <section id="live" className="h-screen min-h-[560px] w-full snap-start bg-black" />;
 }
