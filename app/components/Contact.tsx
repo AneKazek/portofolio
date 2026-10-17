@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import TechMarquee from "./TechMarquee";
 import Image from "next/image";
 
 interface GitHubStats {
@@ -314,6 +315,8 @@ export default function Contact() {
             <span>↑</span>
           </button>
         </footer>
+
+        <TechMarquee />
       </div>
     </section>
   );

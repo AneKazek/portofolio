@@ -54,3 +54,23 @@ html.lenis, html.lenis body {
   0%, 100% { filter: brightness(1); }
   50% { filter: brightness(0.6); }
 }
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.tech-marquee-track {
+  display: flex !important;
+  width: max-content !important;
+  animation: marquee-scroll 35s linear infinite !important;
+  will-change: transform;
+}
+
+.tech-marquee-track:hover {
+  animation-play-state: paused !important;
+}
