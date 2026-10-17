@@ -48,13 +48,13 @@ const ACHIEVEMENTS: AchievementItem[] = [
     colSpan: "lg:col-span-4",
   },
   {
-    id: "bdc-uinic",
-    rank: "FINALIST",
-    title: "Big Data Challenge Statistic Explore",
-    institution: "UNIVERSITAS SYIAH KUALA",
+    id: "uinic-2025",
+    rank: "3RD PLACE",
+    title: "UIN Informatics Competition (UINIC) 2025",
+    institution: "UIN SUNAN KALIJAGA",
     year: "2025",
     description:
-      "Ranked third in the qualifier stage with a 0.421838 private Macro-F1 score by addressing severe missing data and class imbalance.",
+      "Secured 3rd Place by architecting 'MindPath', an interactive mental health support platform built with Laravel, featuring clinical self-assessment workflows and gamified wellness therapy routines.",
     image: "/images/uinic.webp",
     colSpan: "lg:col-span-4",
   },
